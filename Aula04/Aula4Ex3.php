@@ -19,6 +19,7 @@ switch ($diaSemana){
     default;
         echo "Dia inválido!";
 }
+
 $hora = 18;
 switch (true){
     case ($hora >= 6 && $hora > 12);
