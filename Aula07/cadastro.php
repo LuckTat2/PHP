@@ -27,17 +27,12 @@
         }
             //Na linha abaixo, poderia ser usado isset($nome) && isset($email) e assim por diante
             //isset verifica se a varíavel está definida e retorna um valor verdadeiro ou falso
-            /* if (empty($nome) || empty($email) || empty($matricula) || empty($curso) || empty($telefone) || empty($endereco) || empty($cep) || empty($uf) || empty($chor) || empty($hcomp) || empty($cidade)){
+            if (empty($nome) || empty($email) || empty($matricula) || empty($curso) || empty($telefone) || empty($endereco) || empty($cep) || empty($uf) || empty($chor) || empty($hcomp) || empty($cidade)){
                 header("Location: falha.php"); //header redireciona para outra página
                 exit;
             } else {
                 header("Location: sucesso.php");
-                exit;
             }
-        } else {
-            header("Location: agradecimentos.php");
-            exit;
-        } */
        
         //Conexão com banco de dados MySQL (Host, Usuário, Senha, Banco de Dados)
         $conexao = mysqli_connect("localhost", "root", "", "aula_php");
