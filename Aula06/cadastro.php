@@ -9,7 +9,7 @@
     <script src='main.js'></script>
 </head>
 <body>
-    <?php //Também é possível utilziar get ao invés de post, porém, o get mostra as informações na url, sendo menos seguro para senha por exemplo
+    <?php
         if ($_SERVER["REQUEST_METHOD"] == "POST"){
             $nome = $_POST['nome'];
             $matricula = $_POST['matricula'];
@@ -33,19 +33,6 @@
             header("Location: agradecimentos.php");
             exit;
         }
-
-        echo "<h1>Sucesso! Dados Recebidos: </h1>";
-        echo "<p><strong>Nome: </strong>$nome</p>";
-        echo "<p><strong>Mátricula: </strong>$matricula</p>";
-        echo "<p><strong>Curso: </strong>$curso</p>";
-        echo "<p><strong>E-mail: </strong>$email</p>";
-        echo "<p><strong>Telefone: </strong>$telefone</p>";
-        echo "<p><strong>Endereço: </strong>$endereco</p>";
-        echo "<p><strong>CEP: </strong>$cep</p>";
-        echo "<p><strong>Cidade: </strong>$cidade</p>";
-        echo "<p><strong>UF: </strong>$uf</p>";
-        echo "<p><strong>Horas Complementares: </strong>$hcomp</p>";
-        echo "<p><strong>Carga Horária: </strong>$chor</p>";
     ?>
 </body>
 </html>
